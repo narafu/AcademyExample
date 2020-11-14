@@ -1,0 +1,56 @@
+body {
+    background-color: #f7f4ef;
+}
+.hidden {
+    display: none;
+}
+.container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.contents {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* hover */
+.img2 {
+    display: none;
+}
+
+#header .site-map {
+    position: relative;
+}
+#header .site-map a:hover .img2 {
+    display: block;
+    position: absolute;
+    right: 0px;
+}
+
+
+#header .container .contents .header-menu ul li:hover {
+    color: #d70d00;
+}
+#header .header-menu .sub-menu {
+    display: none;
+}
+#header .header-menu li:hover .sub-menu {
+    display: block;
+    position: absolute;
+}
+#header .container .contents .header-menu .sub-menu li:hover a {
+    color: white;
+}
+
+
+#aside li:hover .img1 {
+    display: none;
+}
+#aside li:hover .img2 {
+    display: block;
+}
+
+

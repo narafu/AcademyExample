@@ -1,0 +1,65 @@
+.hidden {
+    display: none;
+}
+
+body .container{
+    width: 860px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+    #header .top-header {
+        border-top: 4px solid #ff6a00;
+        background-color: #f4f4f6;
+    }
+        #header  .top-header .container {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #header .bottom-header .container {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #body {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    #body .visual {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #body .bottom-main {
+        border-top: 1px solid #dedede;
+        margin-top: -5px;
+    }
+
+    #body .bottom-main .container{
+        width: 860px;
+        margin-left: 320px;
+        margin-right: auto; 
+    }
+
+
+#quickbar {
+    margin-left: 1230px;
+    margin-right: auto;
+    width: 200px;
+    height: 300px;
+}
+
+
+
+#footer {
+    border-top: 1px solid #ccc;
+    margin-top: 100px;
+    height: 150px;
+}
+    #footer .container {
+        height: inherit;
+        margin-left: auto;
+        margin-right: auto;
+    }

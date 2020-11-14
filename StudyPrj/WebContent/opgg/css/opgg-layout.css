@@ -1,0 +1,56 @@
+.hidden {
+	display: none;
+}
+
+#header {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1080px;
+	height: 85px;
+}
+
+#header .top-header {
+	background-color: #232f46;
+	width: 1080px;
+	height: auto;
+}
+
+#header .bottom-header {
+	background-color: #5383E8;
+	width: 1080px;
+	height: 45px;
+}
+
+#main {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1080px;
+	height: auto;
+	background-color: #f6f4f0;
+}
+
+#main .aside {
+	height: 50px;
+	background-color: lightgray;
+}
+
+#main .content-container {
+	display: flex;
+	background-color: white;
+}
+
+#main .content-container .list {
+	width: 650px;
+}
+
+#main .content-container .ranking {
+	margin-left: 20px;
+	width: 380px;
+}
+
+#footer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1080px;
+	background-color: lightgray;
+}
