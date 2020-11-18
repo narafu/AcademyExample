@@ -1,0 +1,106 @@
+
+/*
+1. 제일큰 방 스타일
+    - size 변경
+        : width, height -> 100px, 100%, inherit
+    - background
+        : -color, -image, left, top, repeat
+        : background-size : cover, contain
+        : background-attatchment : auto, scroll, local
+    - border
+        : -width, color, style(solid, dotted, ..)
+2. 두번째 방 스타일(컨텐츠 방)
+    - margin
+        : left : auto, right : auto
+    - 수평정렬(텍스트)
+        : text-align
+    - 박스(명명->wrapper, container)
+        : 중첩되는 박스에 대하여, 선택자를 어떻게 사용할 것인가?
+            : 구조? 명명? 
+                : 각각 장단점이 있다. 구조가 변경될 여지가 있다면 명명(id, class 등)으로.
+3. 세번째 방 스타일
+    - width : 205px, 755px
+        : block스타일 때문여 stack방식으로 배열되었다.
+            : position static(stack), absolute(기준:문서), relative(기준:자기위치), fixed(기준:화면), sticky
+                : static은 left와 top 속성을 이용하지 않는다.
+                : 부모 position : relative / 자식 position : absolute
+
+*/
+
+#header{
+    /* display가 block일 때만  너비를 갖는다. */
+    /* div는 block, span은 inline */
+    /* overflow: visible; */
+    /* position: sticky; */
+    /* display: flex;
+    align-items: center; */
+    height: 70px;
+}
+
+    #header .content-container{
+        margin-left: auto;
+        margin-right: auto;
+        width: 960px;
+        height: 100%; /* inherit */
+        /* 박스는 margin으로 텍스트는 text-align으로 정렬; */
+        position: relative;
+    }
+
+#visual{
+    background:url(../images/bg-visual.png);
+    height: 171px;
+    border-top: 3px solid #8cBA34;
+}
+
+    #visual .content-container{
+        background: url(../images/customer/visual.png) no-repeat center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 960px;
+        height: 100%;
+    }
+
+#body {
+    border-top: 5px solid #8cBA34;
+    margin-top: 1px;
+    min-height: 300px;
+}
+
+    #body .content-container{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 960px;
+        min-height: inherit;
+        background: url(../images/bg-body.png);
+    }
+
+    #body .aside{
+        background: url("../images/bg-aside-title.png") no-repeat left top;
+        width: 205px;
+        min-height: inherit;
+    }
+
+    #body .main{
+        /* box-sizing: border-box; */
+        width: 755px;
+        flex-grow: 1;
+        min-height: inherit;
+        position: relative;
+        padding-left: 35px;
+        padding-top: 45px;
+    }
+
+#footer{
+    height: 100px;
+    background: #313131;
+}
+
+    #footer .content-container{
+        margin-left: auto;
+        margin-right: auto;
+        width: 960px;
+        height: 100%;
+    }
+
+    

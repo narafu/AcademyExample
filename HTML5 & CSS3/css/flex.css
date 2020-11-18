@@ -1,0 +1,82 @@
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row-reverse; */
+    border:1px solid black;
+    background: #e9e9e9;
+    flex-direction: column;
+    height: 200px;  
+    /* align-items: center; */
+    /* 좌우정렬 */
+    justify-content: center;
+    /* 상하정렬 */
+}
+
+#container>div{
+    flex-grow: 1;
+    /* 균등분배 */
+    /* min-width:300px; */
+    /* height: 100px; */
+    /* width: 100px; */
+}
+
+#container>div:nth-child(1){
+    background: blue;
+    /* order: 1; */
+}
+
+#container>div:nth-child(2){
+    background: yellow;
+    /* height: 120px; */
+}
+
+#container>div:nth-child(3){
+    background: green;
+    /* flex-grow: 1; */
+    order: -1;
+}
+
+#container>div:nth-child(4){
+    background: pink;
+    /* height: 140px; */
+    /* flex-grow: 2;   */
+}
+
+#container>div:nth-child(5){
+    background: purple;
+    /* height: 110px; */
+}
+
+/*
+    display: flex;
+
+    container(부모) 스타일
+        : display : flex;
+        : flex-direction: row/column/-reverse
+    
+    item(자식) 스타일
+        : container의 flex-direction : row일 때
+            item의 width는?
+                item으로 사용되는 녀석이 block(100%) -> content 너비
+            item의 height는?
+                item으로 사용되는 녀석이 무엇이든 0px 또는 content 높이
+        : item의 width를 고정너비 100px로 했을 경우,
+            item * 개수가 부모의 width를 넘어서는 경우,
+                item의 width는 100px를 유지하지 않는다. 균등분할.
+                    마치 item의 width는 max-width를 정하는 느낌
+            width 100px를 유지하려면, mix-width를 사용한다.
+        : item의 flex-grow -> 빈공백을 나누는 비율을 설정한다.
+            빈공백이 있을 때만 유효하다.
+*/
+
+/*
+    *** 정렬방식을 갖고 있다. ***
+ 
+    그럼 자식(item)의 높이는 어떻게 되는가?
+    : 부모(container)따라 높이가 200px로 상속된다.
+
+    item의 높이를 100px로 해보자.
+
+    item의 높이를 각 100, 120, 100, 140, 100으로 해보자.
+
+/*

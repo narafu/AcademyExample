@@ -1,0 +1,52 @@
+@import url(layout.css);
+@import url(component.css);
+
+.d-none {
+    display: none;
+}
+
+body {
+    font-family: "맑은 고딕", "고딕", sans-serif;
+    font-size: 11px;
+    color: #979797;
+}
+
+.text-highlight {
+    color: #ff6a00;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.margin-top {
+    margin-top: 10px;
+}
+
+.margin-main-top {
+    margin-top: 23px;
+}
+
+/*
+
+style은 outline 같은 것은 따지지 않는다.
+다만 스타일 하기 위한 박스만 찾는다.
+
+방을 나누는 작업(크기, 위치)과 벽지 바르기(배경, 경계)
+방을 배치할 때 선형배치의 어려움은 flex 로 해결하자.
+
+아이템(콘텐츠(-텍스트:이미지,span,b,..) 블록[목록,폼,표,제목,문장])
+아이템 = 콘텐츠블록을 선택할 때.. id? class?
+
+문서에서 유일한 놈의 이름은 물론 id가 맞지...
+but 그러나.. 스타일의 명명은 class를 기본으로 하자.
+
+.main-menu : section(O) -> ul(X)
+콘텐츠 블록은 내부 구조가 달라질 가능성이 별로 없어
+nav.main-menu>ul>li>
+
+방(layout.css),
+콘텐츠블록(component.css),
+콘텐츠(style.css)
+
+*/

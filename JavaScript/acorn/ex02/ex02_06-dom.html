@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex01-dom.css">
+    <script src="pung.js"></script>
+    <script src="ex01-dom.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section id="s2">
+
+        <div>
+            <input class="range-input" type="range" min="0" max="255" step="1">
+            <label for="">x좌표</label>
+            <input class="x-input" type="checkbox">
+            <label for="">너비</label>
+            <input class="width-input" type="checkbox">
+            <input class="r-input color-input" name="bg-color" type="radio" value="빨강"><label for="">빨강</label>
+            <input class="g-input color-input" name="bg-color" type="radio" value="초록"><label for="">초록</label>
+            <input class="b-input color-input" name="bg-color" type="radio" value="파랑"><label for="">파랑</label>
+
+
+        </div>
+
+        <div class="container">
+            <div class="box">박스</div>
+        </div>
+        <br />
+        <hr />
+    </section>
+
+    <section id="s1">
+        <div>
+            <label for="">x:</label> <input type="text" class="x-input">
+            <label for="">y:</label> <input type="text" class="y-input"><br />
+            <label for="">color:</label> <input type="text" class="color-input">
+            <input class="move-button" type="button" value="이동" onclick="">
+            <div class="container">
+                <div class="box">1</div>
+                <div class="box">2</div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

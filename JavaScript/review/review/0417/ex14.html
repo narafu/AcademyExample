@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        var x1 = 1;
+        document.write("x1: " + x1 + "<br>");
+
+        function f1() {
+            // var x2 = 2;
+            x2 = 2;
+        }
+
+        function f2() {
+            document.write("x1: " + x1 + ", x2: " + x2);
+        }
+
+        f1();
+        f2();
+
+        // x2를 var로 선언해주면 f2()는 아무것도 출력하지 못 한다.
+        // x2가 f1() 중괄호 내에서만 선언되었기 때문이다.
+        // 그러나 x2를 var로 선언하지 않으면, f2()가 출력한다.
+        // x2를 전역변수로 여기기 때문이다(?)
+
+    </script>
+
+</body>
+
+</html>

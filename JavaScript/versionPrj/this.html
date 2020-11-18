@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="button" class="btn" value="btn1">
+    <input type="button" class="btn" value="btn2">
+    <input type="button" class="btn" value="btn3">
+
+    <div id="outer">
+        <input type="button" value="OuterB" id="OuterB">
+        <div id="inner">
+            <input type="button" class="btn" value="InnerB" id="InnerB">
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $(".btn").on("click", function (event) {
+                console.log($(this));
+                console.log($(event.currentTarget));
+                console.log($(event.target));
+            });
+
+
+            $("#outer").on("click", function (event) {
+                console.log($(this));
+                console.log($(event.currentTarget));
+                console.log($(event.target));
+            })
+        })
+    </script>
+
+</body>
+
+</html>

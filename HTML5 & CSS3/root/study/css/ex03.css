@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+}
+
+p, h1 {
+    margin: 0;
+}
+
+.container {
+    background-color: indianred;
+    /* max-width: 1000px; */
+    /* font-size: 0; */
+    /* margin: 0 auto; */
+    /* 축약형(상하:0, 좌우:auto) */
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.container:after{
+    /* 가상 클래스 */
+    /* content:'';
+    display: block;
+    clear: both;
+
+    height: 0;
+    visibility: hidden; */
+}
+
+.item{
+    /* display: inline-block; */
+    padding: 5%;
+    /* font-size: 1rem; */
+    /* vertical-align: top; */
+}
+
+.item-a{
+    background-color: yellow;
+    /* width: 30%;
+    float: left */
+}
+
+.item-b{
+    background-color: yellowgreen;
+    /* width: 50%;
+    float: right; */
+}
+
+footer {
+    /* clear: both; */
+    /* float 해제 */
+    background-color: gray;
+    height: 50px;
+}
+
+/* 자식이 float이라면 부모는 높이가 없다. 붕 떠서? */
+
+@media screen and (min-width: 700px){
+    .container{
+        font-size: 0;
+    }
+
+    .item{
+        display: inline-block;
+        font-size: 1rem;
+        vertical-align: top;
+    }
+
+    .item-a{
+        width: 30%
+    }
+
+    .item-b{
+        width: 50%;
+    }
+
+}

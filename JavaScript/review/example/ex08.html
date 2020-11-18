@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        var data =
+            '[ \
+                { "co": 0.6, "so2": 0.004, "msrrgn_nm": "도심권", "o3": 0.038, "no2": 0.034, "pm10": 60, "msrdt_de": "20200415", "pm25": 45, "msrste_nm": "중구" }, \
+                { "co": 0.6, "so2": 0.004, "msrrgn_nm": "도심권", "o3": 0.038, "no2": 0.039, "pm10": 63, "msrdt_de": "20200415", "pm25": 41, "msrste_nm": "종로구" }, \
+                { "co": 0.6, "so2": 0.004, "msrrgn_nm": "도심권", "o3": 0.046, "no2": 0.032, "pm10": 68, "msrdt_de": "20200415", "pm25": 40, "msrste_nm": "용산구" } \
+            ]';
+
+        // 원격 데이터는 문자열로 받는다.
+        // console.log(data[0].co); -> 문자열이므로 undefined가 출력된다.
+
+        eval('var x = 30;');
+        console.log(x);
+
+        eval("var ar = " + data + ";");
+        console.log(ar[0].co);
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+
+#header {
+    background: darkgoldenrod;
+    height: 50px;
+}
+
+#visual{
+    background: url(./background1.jpg) no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+#body{
+    background: darkgreen;
+    height: 500px;
+}
+
+#footer{
+    background: darkslategrey;
+    height: 100px;
+}

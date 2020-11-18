@@ -1,0 +1,41 @@
+body {
+    /* margin: 0; */
+}
+
+p, h1 {
+    /* margin: 0; */
+}
+
+.container {
+    background-color: greenyellow;
+    font-size: 0;
+}
+
+.container:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+    .item {
+        padding: 5%;
+        font-size: 1rem;
+        display: inline-block;
+        vertical-align: top;
+        float: left;
+    }
+
+        .item-a {
+            width: 30%;
+            background-color:gold;
+        }
+
+        .item-b {
+            width: 50%;
+            background-color: silver;
+        }
+
+footer{
+    height: 50px;
+    background-color: indianred;
+}

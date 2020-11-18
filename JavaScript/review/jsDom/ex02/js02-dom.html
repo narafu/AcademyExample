@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .img-div {
+            width: 100%;
+            margin: 20px 0px;
+        }
+
+        .width-div {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .img {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: solid;
+        }
+
+        select {
+            height: 25px;
+        }
+    </style>
+
+    <script>
+
+        addEventListener("load", function () {
+
+            var section = document.querySelector("#s1");
+            var btnChange = section.querySelector(".change-button");
+            var srcInput = section.querySelector(".src-input");
+            var selectImg = section.querySelector(".img-select");
+            var img = section.querySelector(".img");
+            var colorInput = section.querySelector(".color-input");
+            var xInput = section.querySelector(".x-input");
+
+            btnChange.onclick = function () {
+
+                img.src = `../../poster/${selectImg.value}`;
+                img.style["border-color"] = colorInput.value;
+            }
+
+            xInput.oninput = function () {
+                img.style["width"] = `${xInput.value}%`;
+            }
+
+        });
+    </script>
+
+    <title>Example</title>
+</head>
+
+<body>
+
+    <section id="s1">
+        <h1>Img</h1>
+        <div>
+
+                <select name="" id="" class="img-select">
+                    <option value="img1.jpg">img1</option>
+                    <option value="img2.jpg">img2</option>
+                    <option value="img3.jpg">img3</option>
+                    <option value="img4.jpg">img4</option>
+                    <option value="img5.jpg">img5</option>
+                    <option value="img6.jpg">img6</option>
+                </select>
+                <input class="color-input" type="color">
+                <input class="change-button" type="button" value="적용">
+            <div class="width-div">
+                <label for="">Width</label>
+                <input class="x-input" type="range">
+            </div>
+        </div>
+        <div class="img-div">
+            <img class="img" src="../../poster/img1.jpg" alt="">
+        </div>
+    </section>
+
+</body>
+
+</html>

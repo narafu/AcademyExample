@@ -1,0 +1,31 @@
+#s1 div:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+#s1 select, input {
+    height: 25px;
+    margin: 5px;
+}
+
+#s1 select, .btn-input {
+    height: 27.5px;
+}
+
+#s1 select {
+    width: 150px;
+}
+
+#s1 .img-div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95vw;
+}
+
+#s1 img {
+    width: inherit;
+    border: solid 10px;
+    border-color: rebeccapurple;
+    box-sizing: border-box;
+}
+

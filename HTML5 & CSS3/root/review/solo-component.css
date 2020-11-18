@@ -1,0 +1,118 @@
+.d-none{
+    display: none;
+}
+
+#header .content-container{
+    display: flex;
+    padding-top: 15px;
+    /* justify-content: space-around; */
+}
+
+#header .content-container .header-menu {
+    display: flex;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+#header .content-container .header-menu ul{
+    display: flex;
+}
+
+#header .content-container .header-menu .main-menu a {
+	font-family: "맑은 고딕";
+	font-weight: bold;
+	font-size: 15px;
+	color: #000;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#header .content-container .header-menu .lecture-form form {
+	font-family: "맑은 고딕";
+	font-weight: bold;
+	font-size: 12px;
+	color: rgb(15, 141, 15);
+    text-decoration: none;
+    
+}
+
+#header .content-container .header-menu .member-menu a {
+	font-family: "맑은 고딕";
+	font-weight: bold;
+	font-size: 10px;
+	color: gray;
+    text-decoration: none;
+    padding: 5px;
+}
+
+#body .aside>h1 {
+
+    padding-top: 45px;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+#body .customer-menu>h1 {
+    margin-top: 40px;
+    background: url(../../images/bg-aside-sub-title.png) no-repeat;
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+    padding-top:4px;
+    
+    font-size: 13px;
+    font-weight: bold;
+    color: ivory;
+    text-shadow: 1px 1px 2px black;
+    vertical-align: middle;
+        
+}
+
+#body .customer-menu a {
+    background: url(../../images/bg-aside-menu-hsp.png);
+    background-repeat: no-repeat;
+    font-size: 12px;
+    padding-left: 20px;
+    color: gray;
+    text-decoration: none;
+
+}
+
+#body .company-menu>h1{
+
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        font-weight: bold;
+        font-size: 13px;
+
+}
+
+#body .root ul {
+    display: flex;
+}
+#body .root li {
+    padding: 2.5px;
+    font-size: 10px;
+    color:  gray;
+}
+
+#body .notice table{
+    margin-left: 50px;
+
+}
+
+#body .pager {
+    display: flex;
+}
+
+#body .pager ul {
+    display: flex;
+    
+}
+
+#body .pager li{
+    padding: 5px;
+    
+}

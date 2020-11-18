@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js01-dom.js"></script>
+    <style>
+        input {
+            width: 50px;
+            height: 25px;
+            margin: 0px 10px;
+            text-align: center;
+        }
+
+        input[type="button"] {
+            width: 50px;
+            height: 30px;
+        }
+
+        #calculator input {
+            width: 50px;
+            height: 40px;
+            margin: 0px;
+            background-color: #eeeeee;
+            border: solid 1px #dddddd;
+            box-shadow: black 5px 5px 5px;
+            font-size: 1em;
+        }
+        #calculator>div>div:first-child input[type="text"]{
+            text-align: right;
+            padding-right: 20px;
+            width: 60px;
+            height: 40px; 
+            margin: 10px;
+            background-color: #eeeeee;
+            border: solid 1px #dddddd;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        #calculator input[type="text"] {
+            text-align: right;
+            padding-right: 20px;
+            width: 180px;
+            height: 40px;
+            margin: 10px;
+            background-color: #eeeeee;
+            border: solid 1px #dddddd;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .color-change>div {
+            width: 300px;
+            height: 200px;
+            text-align: center;
+            font-size: 3em;
+        }
+    </style>
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <section class="cal-1">
+        <h1>Calculator ver 1.0</h1>
+        <div>
+            <input type="text" value="" dir="rtl" id="txt-x">
+            <span>+</span>
+            <input type="text" value="" dir="rtl" id="txt-y">
+            <input type="button" onclick="" value="=" dir="rtl" id="btn-cal">
+            <input type="text" value="" dir="rtl" id="txt-result">
+        </div>
+        <br />
+        <hr />
+    </section>
+
+    <section class="cal-2">
+        <h1>Calculator ver 1.1</h1>
+        <div>
+            <input type="text" value="">
+            <span>*</span>
+            <input type="text" value="">
+            <input type="button" value="=" onclick="calMultiple()">
+            <input type="text" value="">
+        </div>
+        <br />
+        <hr />
+    </section>
+
+    <section>
+        <h1>Calculator ver 1.2</h1>
+        <div>
+            <input type="text">
+            <span>+</span>
+            <input type="text">
+            <span>+</span>
+            <input type="text">
+            <input type="button" value="AVG">
+            <input type="text">
+        </div>
+        <br />
+        <hr />
+    </section>
+
+    <section id="calculator">
+        <h1>Calculator ver 2.0</h1>
+        <div>
+            <div>
+                <input type="text" class="var-x">
+                <input type="text" class="var-y">
+            </div>
+            <div>
+                <input type="button" value="7">
+                <input type="button" value="8">
+                <input type="button" value="9">
+                <input type="button" value="*">
+            </div>
+            <div>
+                <input type="button" value="4">
+                <input type="button" value="5">
+                <input type="button" value="6">
+                <input type="button" value="-">
+            </div>
+            <div>
+                <input type="button" value="1">
+                <input type="button" value="2">
+                <input type="button" value="3">
+                <input type="button" value="+" class="plus">
+            </div>
+            <div>
+                <input type="button" value="?">
+                <input type="button" value="0">
+                <input type="button" value=".">
+                <input type="button" value="AVG" class="avg">
+            </div>
+            <div>
+                <input type="text" class="result">
+            </div>
+        </div>
+        <br />
+        <hr />
+    </section>
+
+    <section class="color-change">
+        <h1>Color Change</h1>
+        <div>
+            <input type="button" value="C">
+            <input type="button" value="T">
+            <div class="box" style="background-color: cadetblue;">Color</div>
+        </div>
+        <br />
+        <hr />
+    </section>
+
+</body>
+
+</html>

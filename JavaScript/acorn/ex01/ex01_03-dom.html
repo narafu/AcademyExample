@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        var nums = [3, 4, 5, 6];
+        var notice = { id: 1, title: "hello" };
+        for (var n in nums) {
+            console.log(nums[n]);
+        }
+        for (var k in notice) {
+            console.log(notice[k]);
+        }
+
+        console.log("-------------------------------------------------------------------------------------")
+
+        var add1 = new Function("x,y", "return x+y"); // 함수가 '객체'이다.
+        console.log(add1(3, 4));
+
+        var add2 = function (x, y) {
+            return x + y;
+        }
+        console.log(add2(5, 3));
+        console.log(add2(5, 2, 5, 1));
+        console.log(add2(7));
+        console.log(typeof 4.5);
+
+        console.log("-------------------------------------------------------------------------------------")
+
+        var add3 = function (x, y) {
+            console.log(arguments.length);
+            return arguments[0] + arguments[1];
+        }
+        var sum1 = add3(34, 51, "hello", 4.2, "go");
+        var sum2 = add3(5, 5);
+        console.log(sum2);
+        console.log(sum1);
+
+        console.log("-------------------------------------------------------------------------------------")
+
+        x = 30;
+        console.log(window.x);
+        var y = 30;
+        console.log(window.y);
+
+        var z = 20;
+        function test1() {
+            var z = 30;
+            console.log(window.z);
+            console.log(z);
+        }
+        test1();
+
+        function test2() {
+            var abc = 30;
+            console.log(window.abc);
+            console.log(abc);
+        }
+        test2();
+
+        {
+            var kkk = 1;
+        }
+        console.log(kkk);
+
+        console.log(kkkk);
+        {
+            var kkkk = 1;
+        }
+
+        
+
+    </script>
+
+</body>
+
+</html>

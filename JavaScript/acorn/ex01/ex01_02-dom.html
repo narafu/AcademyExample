@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        var nums1 = new Array(5, 10, 21, "hello");
+        console.log(nums1);
+
+        var nums2 = new Array(2, 3, 4, 5);
+        var c = nums1.concat(nums2); // 배열을 더한다.
+        console.log(c);
+        nums1.splice(2, 0, nums2); // 배열을 삽입한다.
+        console.log(nums1);
+
+        var exam = new Object();
+        exam = { com: 1000 };
+        exam.kor = 50;
+        exam.eng = 100;
+        exam.math = 150;
+        console.log(exam);
+        console.log(exam.kor + exam.eng * exam.math);
+
+        var obj = new Object();
+        obj["border-width"] = 3;
+        obj["x"] = 2;
+        console.log(obj["border-width"]);
+        console.log(obj.x);
+
+        console.log('---------------------------');
+
+        var notice = new Object();
+        notice.id = 1;
+        notice.title = "hello";
+        notice.writerId = "newlec";
+        console.log(notice);
+
+        var notice = {};
+        notice.id = 1;
+        notice.title = "hello";
+        notice.writerId = "newlec";
+        console.log(notice);
+
+        var notice = { "id": 1, "title": "hello", "writerId": "newlec" };
+        console.log(notice);
+
+        var notice = { id: 1, title: "hello", writerId: "newlec" }; // 데이터를 전달할 때 포맷형식으로 주로 사용한다. : JSON
+        console.log(notice);
+
+        console.log('---------------------------------------------------------------------------------');
+
+        // "var x = 3;";
+        // var y = 4;
+        // console.log(x + y);
+
+        eval("var x = 3;");
+        var y = 4;
+        console.log(x + y);
+
+        var notice = { "id": 1, "title": "hello", "writerId": "newlec" };
+        console.log(notice);
+        var notice = '{ "id": 1, "title": "hello", "writerId": "newlec" }';
+        console.log(notice);
+
+        console.log(notice.title);
+
+        // var notice = eval('{ "id": 1, "title": "hello", "writerId": "newlec" }');
+        // console.log(notice);
+        var notice = eval('({ "id": 1, "title": "hello", "writerId": "newlec" })');
+        console.log(notice);
+
+        console.log('-!-------------------------------------------------------------------------------');
+
+        var notice = JSON.parse('{ "id": 1, "title": "hello", "writerId": "newlec" }');
+        console.log(notice.title);
+        var notice = { "id": 1, "title": "hello", "writerId": "newlec" };
+        console.log(notice.title);
+
+
+        var x = 5;
+        var y = 5;
+        console.log(x == y);
+        console.log(x === y);
+
+        var x = 5;
+        var y = new Number(5);
+        console.log(x == y); // 값 비교 cf) 자바 x.equals(y)
+        console.log(x === y); // 객체 비교 cf) 자바 x == y
+
+        console.log(3.5 + "2"); // 문자열로 바껴 3.52
+        console.log(3.5 - "2"); // 숫자로 바껴 1.5
+
+        console.log('-!-------------------------------------------------------------------------------');
+
+        var nums = [3, 4, 5, 6];
+        for (var i = 0; i < nums.length; i++)
+            console.log(nums[i]);
+
+        console.log('-!-!------------------------------------------------------------------------------');
+        for (var i in nums)
+            console.log(nums[i]);
+
+        console.log('-!-!------------------------------------------------------------------------------');
+        nums.forEach(
+            function(n){
+                console.log(n) + console.log(n);
+            });
+
+        console.log('-!-!------------------------------------------------------------------------------');
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css-maker.css">
+    <script src="./css-maker.js"></script>
+    <title>CSS-Maker</title>
+</head>
+
+<body>
+
+    <section id="maker">
+        <h1>CSS-Maker</h1>
+        <div class="container">
+
+            <div class="style-container">
+                <div class="title-style title">Styles</div>
+                <div>
+                    <select name="main" id="">
+                        <option value="default">select</option>
+                        <option value="border-menu">Border Radius</option>
+                        <option value="transform-menu">CSS Transform</option>
+                        <option value="rgba-menu">RGBA</option>
+                    </select>
+                </div>
+                <div id="menu" class="border-menu">
+                    <ul>
+                        <li>
+                            <div class="label">Style : </div>
+                            <select name="border" id="">
+                                <option value="dashed">dashed</option>
+                                <option value="dotted">dotted</option>
+                                <option value="double">double</option>
+                                <option value="groove">groove</option>
+                                <option value="hidden">hidden</option>
+                                <option value="inset">inset</option>
+                                <option value="none">none</option>
+                                <option value="outset">outset</option>
+                                <option value="ridge">ridge</option>
+                                <option value="solid">solid</option>
+                                <option value="inherit">inherit</option>
+                            </select>
+                        </li>
+                        <li>
+                            <div class="label">Width : </div>
+                            <input type="range" class="w-range" max="75">
+                        </li>
+                        <li>
+                            <div class="label">Radius : </div>
+                            <input type="range" class="r-range" max="15">
+                        </li>
+                        <li>
+                            <div class="label">Color : </div>
+                            <input type="color" class="c-btn">
+                        </li>
+                    </ul>
+                </div>
+                <div id="menu" class="transform-menu">
+                    <ul>
+                        <!-- <li>
+                            <div>Select Transform</div>
+                            <ul class="sub">
+                                <li>
+                                    <div class="radio-div">All : </div>
+                                    <input type="radio" name="transform" value="all" checked>
+                                </li>
+                                <li>
+                                    <div class="radio-div">Rotate : </div>
+                                    <input type="radio" name="transform" value="rotate">
+                                </li>
+                                <li>
+                                    <div class="radio-div">Scale : </div>
+                                    <input type="radio" name="transform" value="scale">
+                                </li>
+                                <li>
+                                    <div class="radio-div">Skew : </div>
+                                    <input type="radio" name="transform" value="skew">
+                                </li>
+                                <li>
+                                    <div class="radio-div">Translate : </div>
+                                    <input type="radio" name="transform" value="translate">
+                                </li>
+                            </ul>
+                        </li> -->
+                        <li>
+                            <div class="label">Rotate : </div>
+                            <input type="range" class="rotate-range" max="360">
+                        </li>
+                        <li>
+                            <div class="label">Scale : </div>
+                            <input type="range" class="scale-range" min="0.1" max="1.5" step="0.01">
+                        </li>
+                        <li>
+                            <div class="label">Skew : </div>
+                            <input type="range" class="skew-range" min="-180" max="180">
+                        </li>
+                        <li>
+                            <div class="label">Translate : </div>
+                            <input type="range" class="translate-range" min="-360" max="360">
+                        </li>
+                    </ul>
+                </div>
+                <div id="menu" class="rgba-menu">
+                    <ul>
+                        <li>
+                            <div class="label">Red : </div>
+                            <input type="range" class="red-range" max="255">
+                        </li>
+                        <li>
+                            <div class="label">Green : </div>
+                            <input type="range" class="green-range" max="255">
+                        </li>
+                        <li>
+                            <div class="label">Blue : </div>
+                            <input type="range" class="blue-range" max="255">
+                        </li>
+                        <li>
+                            <div class="label">Opacity : </div>
+                            <input type="range" class="opacity-range" max="1" step="0.1">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="preview-container">
+                <div class="title-preview title">Preview</div>
+                <div class="content-preview">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

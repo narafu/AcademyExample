@@ -1,0 +1,15 @@
+
+	submit.onclick = function (e) {
+
+		e.preventDefault();
+		searchShare = search.value;
+
+		var xhr = new XMLHttpRequest();
+		xhr.open('get', `list-data?m=${mfrShare}&p=${pageShare}&s=${searchShare}&c=${cupShare}`, true);
+		xhr.send();
+		xhr.onload = function () {
+			var list = JSON.parse(xhr.responseText);
+			listImgDiv.innerHTML = "";
+			printList(list);
+		}
+	}

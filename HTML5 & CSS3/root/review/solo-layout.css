@@ -1,0 +1,64 @@
+#header{
+    height:60px;
+}
+
+    #header .content-container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    height: 100%;
+    }
+
+#visual{
+    background: url(../../images/customer/visual.png);
+    height: 171px;
+    border-top: 3px solid #8cBA34;
+}
+
+    #visual .content-container{
+        width: 960px;
+        height: 100%;        
+        background-repeat: no-repeat;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+#body{
+    height: 600px;
+    margin-top: 2px;
+    border-top: 5px solid #8cBA34;
+       }
+
+    #body .content-container{
+        background: url(../../images/bg-body.png);
+        display: flex;
+        width: 960px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;      
+    }
+
+        #body .aside{
+            background: url(../../images/bgNaviTitle.png);
+            background-repeat: no-repeat;
+            width: 205px;
+            height: 100%;
+        }
+
+        #body .main{
+            width: 755px;
+            height: 100%;
+        }
+
+#footer{
+    background-color: #313131;
+    height:100px;
+}
+
+    #footer .content-container{
+        background-repeat: no-repeat;
+        width: 960px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }

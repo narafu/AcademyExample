@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css" type="text/css">
+    <link rel="stylesheet" href="./solo-style.css" type="text/css">
+</head>
+
+<body>
+    <!-- header box -->
+    <header id="header">
+        <div class="content-container">
+            <h1><a href=""><img src="../../images/logo.png" alt="로고"></a></h1>
+            <section class="header-menu">
+                <h1 class="d-none">헤더</h1>
+                <nav class="main-menu">
+                    <h1 class="d-none">메인메뉴</h1>
+                    <ul>
+                        <li><a href="">학습가이드</a></li>
+                        <li><a href="">강좌선택</a></li>
+                        <li><a href="">Answer Is</a></li>
+                    </ul>
+                </nav>
+                <section class="lecture-form">
+                    <h1 class="d-none">강좌검색 폼</h1>
+                    <form>
+                        <fieldset>
+                            <legend class="d-none">과정검색필드</legend>
+                            <label>과정검색</label>
+                            <input type="text">
+                            <input type="submit" value="검색">
+                        </fieldset>
+                    </form>
+                </section>
+                <nav class="member-menu">
+                    <h1 class="d-none">회원메뉴</h1>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">로그인</a></li>
+                        <li><a href="">회원가입</a></li>
+                    </ul>
+                <!-- </nav>
+                <nav class="customer-menu"> -->
+                    <h1 class="d-none">고객메뉴</h1>
+                    <ul>
+                        <li><a href=""><img src="../../images/txt-mypage.png"></a></li>
+                        <li><a href=""><img src="../../images/txt-customer.png"></a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </header>
+
+    <!-- visual box -->
+    <div id="visual">
+        <div class="content-container"></div>
+    </div>
+
+    <!-- body box -->
+    <div id="body">
+        <div class="content-container">
+            <aside class="aside">
+                <h1>고객센터</h1>
+                <nav class="customer-menu">
+                    <h1>고객센터메뉴</h1>
+                    <ul>
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">자주하는 질문</a></li>
+                        <li><a href="">수강문의</a></li>
+                        <li><a href="">이벤트</a></li>
+                    </ul>
+                </nav>
+                <nav class="company-menu">
+                    <h1>협력업체</h1>
+                    <ul>
+                        <li><a href=""><img src="../../images/notepubs.png" alt=""></a></li>
+                        <li><a href=""><img src="../../images/namoolab.png" alt=""></a></li>
+                        <li><a href=""><img src="../../images/hanbit.png" alt=""></a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main class="main">
+                <section>
+                    <h1>공지사항</h1>
+                    <section class="root">
+                        <h1 class="d-none">경로</h1>
+                        <ul>
+                            <li>home</li>
+                            <li>고객센터</li>
+                            <li>공지사항 </li>
+                        </ul>
+                    </section>
+                    <section class="findform">
+                        <h1 class="d-none">공지사항 검색폼</h1>
+                        <form>
+                            <fieldset>
+                                <legend class="d-none">공지사항 검색필드</legend>
+                                <label class="d-none">검색분류</label>
+                                <select>
+                                    <option>제목</option>
+                                    <option>작성자</option>
+                                </select>
+                                <label class="d-none">검색어</label>
+                                <input type="text">
+                                <input type="submit" value="검색">
+                            </fieldset>
+                        </form>
+                    </section>
+                    <section class="notice"> 
+                        <h1 class="d-none">공지사항 목록</h1>
+                        <table border="1px">
+                            <tr>
+                                <td>번호</td>
+                                <td>제목</td>
+                                <td>작성자</td>
+                                <td>작성일</td>
+                                <td>조회수</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><a href=""></a>2020년 2월 모집 안내입니다.</td>
+                                <td>newlec</td>
+                                <td>2019-12-14</td>
+                                <td>1680</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><a href=""></a>현재 좋은 인재를 찾고 계신가요?</td>
+                                <td>newlec</td>
+                                <td>2019-11-10</td>
+                                <td>1090</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td><a href=""></a>JSP 수업용 html 파일</td>
+                                <td>newlec</td>
+                                <td>2019-10-04</td>
+                                <td>996</td>
+                            </tr>
+                        </table>
+                    </section>
+                    <section class="pager">
+                        <h1 class="d-none">현재 페이지</h1>
+                        <div>이전</div>
+                        <ul>
+                            <li><a href=""></a>1</li>
+                            <li><a href=""></a>2</li>
+                            <li><a href=""></a>3</li>
+                            <li><a href=""></a>4</li>
+                            <li><a href=""></a>5</li>
+                        </ul>
+                        <div>다음</div>
+                    </section>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <!-- footer box -->
+    <footer id="footer">
+        <div class="content-container">
+            <!-- <section>
+            <h1>회사정보</h1>
+            <section>
+                <h1>소유자정보</h1>
+                <dl>
+                    <dt>주소:</dt>
+                    <dd>서울특별시 마포구 토정로35길 11, 인우빌딩 5층 266호</dd>
+                    <dt>관리자메일:</dt>
+                    <dd>admin@newlecture.com</dd>
+                    <dt>사업자 등록번호:</dt>
+                    <dd>132-18-46763</dd>
+                    <dt>통신 판매업:</dt>
+                    <dd>신고제 2013-서울강동-0969 호</dd>
+                    <dt>상호:</dt>
+                    <dd>뉴렉처</dd>
+                    <dt>대표:</dt>
+                    <dd>박용우</dd>
+                    <dt>전화번호:</dt>
+                    <dd>070-4206-4084</dd>
+                </dl>
+            </section>
+            <section>
+                <h1>저작권정보</h1>
+                <div>
+                    Copyright ⓒ newlecture.com 2012-2014 All Right Reserved. Contact admin@newlecture.com for more
+                    information
+                </div>
+            </section>
+        </section> -->
+        </div>
+    </footer>
+
+</body>
+
+</html>

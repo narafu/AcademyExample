@@ -1,0 +1,26 @@
+.container {
+    width: 450px;
+    height: 450px;
+    border: solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#s1 .box {
+    width: 450px;
+    height: 450px;
+    background-color: black;
+}
+
+#s1 .range-input {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#s1 .checkbox {
+    text-align: center;
+    padding: 20px 0px;
+}

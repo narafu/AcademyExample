@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+            console.log("a: " + a);
+        
+        var a = 10;
+        b = 20;
+        
+            console.log("b: " + b);
+        
+        function test() {
+            var c = 30;
+            d = 40;
+                console.log("c: " + c);
+        }
+
+        test();
+            console.log("d: " + d);
+        
+        /*
+        a는 전역변수* (선언: 시작하면서, 대입: 만나면서)
+        b는 전역변수 (선언, 대입: 둘다 만나면서)
+        c는 지역변수 
+        d는 전역변수 (선언, 대입: 둘다 만나면서)
+
+        선언하지 않은 변수는 함수 밖이나 안이나 같다.
+        선언한 변수는 함수 밖에선 전역변수*가 되고, 함수 안에선 지역변수가 된다.
+        */
+
+    </script>
+
+</body>
+</html>
