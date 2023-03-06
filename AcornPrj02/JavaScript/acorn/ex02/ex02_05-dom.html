@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section id="s1">
+
+        <style>
+            #s1 .container {
+                width: 700px;
+                height: 400px;
+                border: solid 1px #979797;
+                position: relative;
+            }
+
+            #s1 .container .box {
+                width: 100px;
+                height: 100px;
+                background: blueviolet;
+                transition: 1s;
+            }
+
+            #s1 .container .box:nth-child(2) {
+                position: absolute;
+                top: 100px;
+                left: 100px;
+            }
+
+            /* #s1 .container .box:nth-child(3) {
+                position: absolute;
+                top: 200px;
+                left: 200px;
+                background-color: brown;
+            }
+            #s1 .container .box:nth-child(4) {
+                position: absolute;
+                top: 100px;
+                left: 300px;
+            }
+            #s1 .container .box:nth-child(5) {
+                position: absolute;
+                top: 0px;
+                left: 400px;
+            } */
+        </style>
+
+        <h1>hello</h1>
+        <div>
+            <label for="">x:</label> <input type="text" class="x-input">
+            <label for="">y:</label> <input type="text" class="x-input">
+            <!-- <input type="button" value="더하기" onclick="button_Click_()"> -->
+            <input type="button" value="이동" onclick="movButtonClick()">
+            <!-- <input class="result-input" value=""> -->
+            <div class="container">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <!-- <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div> -->
+            </div>
+        </div>
+        <!-- <div>
+            <input type="text" class="" value="">
+            <input type="button" value="click" onclick="buttonClick()">
+            <input type="button" value="click" onclick="confirm('정말로 삭제하겠습니까?')">
+            <input type="button" value="출력" onclick="buttonClick_()">
+        </div> -->
+    </section>
+    <!-- <nav id="some-menu">
+        <h1>무슨메뉴</h1>
+        <ul>
+            <li>짜장면</li>
+            <li>짬뽕</li>
+            <li>양장피</li>
+        </ul>
+    </nav> -->
+
+    <script>
+
+        // function buttonClick() {
+        //     var section = document.querySelector("#some-menu");
+        //     var ul = section.querySelector("ul");
+        //     var first = ul.firstElementChild;
+        //     first.innerText = "호호";
+        //     var next = first.nextElementSibling;
+        //     next.innerText = "찾았다!!!!!!!!!!!!!!!!!";
+        // }
+
+        // function buttonClick_() {
+        //     var section = document.querySelector("#s1");
+        //     var xInput = section.querySelector(".x-input");
+        //     alert(xInput.value);
+        // }
+
+        // function button_Click_() {
+        //     var x = document.querySelector(".x-input");
+        //     var y = document.querySelector(".x-input");
+        //     var result = document.querySelector(".result-input");
+        //     result.value = parseInt(x.value) + parseInt(y.value);
+        // }
+
+        function movButtonClick() {
+            var section = document.querySelector("#s1");
+            var xInput = section.querySelector(".x-input");
+            var yInput = section.querySelector(".y-input");
+
+
+            var box = section.querySelector(".box");
+            box.style.left = xInput.value + "px";
+            box.style.top = yInput.value + "px";
+
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

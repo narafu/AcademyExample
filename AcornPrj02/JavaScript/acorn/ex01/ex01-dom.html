@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // alert("Hello Javascript");
+        console.log("Hello Javascript");
+        document.write("Hello Javascript");
+
+        var x = new Number(2);
+        var y = 5;
+        console.log("x + y = " + (x + y));
+
+        var nums = new Array(); // 기본적으로 가변길이 배열, 크기를 정하지 않는다.
+        nums[0] = 30;
+        nums[1] = 20;
+        console.log(nums[0] + nums[1]);
+
+        var nums = new Array(); // 차례대로 넣지 않아도 된다. 채우지 않은 앞배열은 undefined.
+        nums[3] = 5;
+        console.log(nums.length);
+        console.log(nums);
+        console.log(nums[1]);
+
+        var nums = new Array(); // 비어있는 배열을 만든다.
+        var nums = new Array(3); // 비어있는 3개의 배열을 만든다.
+        var nums = new Array(3, 4, 5); // 3,4,5 값을 넣어 3개 배열을 만든다.
+
+        var nums = new Array();
+        nums.push(3);
+        nums.push(5); // 순서대로 채운다. - push()
+        console.log(nums);
+        var n = nums[0];
+        console.log("nums[0]:" + n);
+        console.log(nums);
+        n = nums.pop(); // 후입선출(stack) - pop()
+        console.log("nums.pop():" + n);
+        console.log(nums);
+
+        var nums = new Array(3, "hello", 5, new Array(2, 3, 4)); // 배열 안에 배열도 들어간다.
+        console.log(nums[3][1]); // 4번째 인덱스(배열)에서 2번째 값
+        
+        var nums = new Array(5, 10, 21, "hello");
+        nums.splice(2); // 왼쪽부터 2개만 남기고 지운다. - splice()
+        console.log(nums);
+
+        var nums = new Array(5, 10, 21, "hello");
+        nums.splice(2, 1); // 3번째 인덱스부터 1개를 지운다. - splice()
+        console.log(nums);
+
+        var nums = new Array(5, 10, 21, "hello");
+        nums.splice(1, 0, 23); // 2번째 인덱스에서 값을 지우지 말고(0) 23을 넣는다. - splice()
+        console.log(nums);
+        var nums = new Array(5, 10, 21, "hello");
+        nums.splice(1, 2, 23); // 2번째 인덱스에서 값을 2개 지우고(2) 23을 넣는다. - splice()
+        console.log(nums);
+
+        
+
+    </script>
+
+</body>
+
+</html>

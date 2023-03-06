@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        eval("var x = 20;");
+        document.write(x);
+        document.write("<br/>");
+
+        var data =
+            '[ \
+                { "co": 0.6, "so2": 0.004, "msrrgn_nm": "도심권", "o3": 0.038, "no2": 0.034, "pm10": 60, "msrdt_de": "20200415", "pm25": 45, "msrste_nm": "중구" }, \
+                { "co": 0.6, "so2": 0.004, "msrrgn_nm": "도심권", "o3": 0.038, "no2": 0.039, "pm10": 63, "msrdt_de": "20200415", "pm25": 41, "msrste_nm": "종로구" }, \
+                { "co": 0.6, "so2": 0.004, "msrrgn_nm": "도심권", "o3": 0.046, "no2": 0.032, "pm10": 68, "msrdt_de": "20200415", "pm25": 40, "msrste_nm": "용산구" } \
+            ]';
+
+        eval("var ar = " + data + ";");
+        document.write(ar[1].so2);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        var data1 = { "n id": 1, title: "aaa" };
+        console.log(data1["n id"]);
+        console.log(data1.title);
+
+        var data2 = JSON.parse('{"id": 1, "title": "aaa" }');
+        // JSON.parse()를 사용할 때는 속성명도 "" 무조건(엄격하게) 해주어야 한다.
+        console.log(data2.title);
+
+        var json = JSON.stringify(data2);
+        console.log(json);
+
+    </script>
+
+</body>
+
+</html>

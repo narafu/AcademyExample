@@ -1,0 +1,47 @@
+
+#s1 .container {
+
+    width: 100%;
+    /* width: 700px; */
+    height: 400px;
+    border: solid 1px #979797;
+    position: relative;
+}
+
+#s1 .container .box {
+    width: 100px;
+    height: 100px;
+    background: blueviolet;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: 1s;
+}
+
+#s1 .container .box:last-child {
+    top: 100px;
+    left: 100px;
+}
+
+#s2 .container {
+
+    width: 100%;
+    /* width: 500px; */
+    height: 200px;
+    border: solid 1px gray;
+    position: relative;
+
+}
+
+#s2 .container .box {
+
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: blueviolet;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+
+}

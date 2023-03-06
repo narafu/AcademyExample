@@ -1,0 +1,38 @@
+
+#s1 .container {
+    width: 100%;
+    height: 200px;
+    border: solid 1px gray;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#s1 .container .box {
+    position: absolute; /* 부모의 relative 안에 갇힌다.*/
+    width: 100px;
+    height: 100px;
+    background: blueviolet;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    transition: 1s;
+}
+
+#s1 .container .box .description {
+    position: absolute; /* 부모의 absolute 안에 갇힌다.*/
+    left: 0px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: initial;
+    border: solid violet;
+    bottom: 0px;
+    background-color: teal;
+    padding: 5px;
+    width: 150px; /* width를 주면 부모보다 더 커진다.*/
+}
+.d-none {
+    display: none;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery03.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            display: flex;
+        }
+
+        #s1 {
+            margin: 50px;
+
+        }
+
+        .btn-container {
+            width: 500px;
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box-container {
+            width: 500px;
+            height: 500px;
+            background-color: #eeeeee;
+            position: relative;
+        }
+
+        .box {
+            background-color: yellowgreen;
+            width: 100px;
+            height: 100px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 100px;
+            border: solid;
+            /* transition: 1s; */
+            box-sizing: border-box;
+        }
+
+        .opacity {
+            opacity: 0.5;
+        }
+    </style>
+
+    <section id="s1">
+        <h1>Example</h1>
+        <div class="btn-container">
+            <div>
+                <span>Time : </span>
+                <span class="timer"></span>
+            </div>
+            <div>
+                <input class="btn-input" type="button" value="시작">
+                <input class="btn-input" type="button" value="동작">
+                <input class="btn-input" type="button" value="복제">
+                <input class="btn-input" type="button" value="출발">
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box">BOX</div>
+            <div class="box">BOX</div>
+            <div class="box">BOX</div>
+            <div class="box">BOX</div>
+            <div class="box">BOX</div>
+        </div>
+    </section>
+
+</body>
+
+</html>

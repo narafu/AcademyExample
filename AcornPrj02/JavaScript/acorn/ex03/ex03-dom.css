@@ -1,0 +1,41 @@
+
+
+#s1 .container {
+
+    width: 100%;
+    /* width: 500px; */
+    height: 200px;
+    border: solid 1px gray;
+    position: relative;
+}
+
+#s1 .container .box {
+
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: blueviolet;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    transition: 1s;  /* 초기값이 있어야 한다. */
+    left: 0px;
+    top: 0px;
+
+}
+
+#s1 .container .pos0 {
+    left:100px;
+    top:0px;
+}
+
+#s1 .container .pos1 {
+    left:400px;
+    top:0px;
+}
+
+#s1 .container .pos2 {
+    left:250px;
+    top:100px;
+}

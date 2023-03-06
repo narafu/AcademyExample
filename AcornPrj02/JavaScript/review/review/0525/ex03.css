@@ -1,0 +1,44 @@
+#s1 .container {
+    
+    width: 500px;
+    height: 300px;
+    border: solid;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#s1 .container .box {
+    
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+ 
+}
+
+#s1 .container .box:nth-child(1) {
+    
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+ 
+}
+
+#s1 .container .box:nth-child(2) {
+    
+    background-color: lightskyblue;
+ 
+}
+
+#s1 .container .box:nth-child(3) {
+    
+    background-color: lightgreen;
+ 
+}
+
+.discription {
+    font
+}

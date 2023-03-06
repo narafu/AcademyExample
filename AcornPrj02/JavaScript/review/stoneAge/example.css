@@ -1,0 +1,203 @@
+
+/* -------------------- layout -------------------- */
+
+* {
+    font-family: 'Recipekorea';
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#header {
+    padding: 20px;
+}
+
+.visual {
+    background-color: #292929;
+    padding-top: 30px;
+}
+
+#main {
+    padding: 20px;
+}
+
+#footer {
+    background-color: #292929;
+    padding: 20px;
+}
+
+/* -------------------- style -------------------- */
+
+@font-face {
+    font-family: 'Recipekorea';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-wide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 3em;
+    font-weight: bold;
+    padding: 20px 60px;
+}
+
+li {
+    padding: 2.5px 10px;
+    font-weight: bold;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+/* -------------------- header -------------------- */
+#header {
+    color: #292929;
+}
+.header-menu li {
+    margin: 30px 60px;
+    background-color: #292929;
+    color: white;
+    text-align: center;
+    flex-grow: 1;
+    padding: 15px 0px;
+}
+.header-menu li a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+
+/* -------------------- visual -------------------- */
+
+
+.visual .visual-slide {
+    background: url(img/i10821619630.jpg) right center,
+                url(img/pc-main.png) center center,
+                url(img/pc넷마블.jpg) left center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    height: 500px;
+    transition: 2s;
+    position: relative;
+}
+
+.visual.world .visual-slide {
+    background: url(img/unnamed.jpg) right center,
+                url(img/unnamed1.jpg) center center,
+                url(img/m월드.jpg) left center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    height: 500px;
+    transition: 2s;
+    position: relative;
+}
+
+.visual .visual-slide i:hover {
+    cursor: pointer;
+    color: #ffc300;
+    transition: 0.75s;
+    transform: scale(1.25);
+}
+
+.visual .visual-slide .fa-arrow-circle-left {
+    position: absolute;
+    top: 50%;
+    left: 2.5%;
+}
+
+.visual .visual-slide .fa-arrow-circle-right {
+    position: absolute;
+    top: 50%;
+    right: 2.5%;
+}
+
+.visual .slide-circle {
+    color: #ffc300;
+    text-align: center;
+    z-index: 100;
+    padding: 10px;
+}
+
+.visual .slide-circle i {
+    padding: 5px;
+}
+
+
+/* -------------------- main -------------------- */
+
+.menu li {
+    background-color: #292929;
+    color: white;
+    margin: 20px 40px;
+    margin-top: 160px;
+    padding: 20px 0px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.menu li a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+.menu li::after {
+    display: inline-block;
+    width: 1000px;
+    text-align: center;
+}
+
+.menu li:hover {
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.group {
+    display: flex;
+    justify-content: center;
+    padding: 25px 50px;
+    margin-bottom: 120px;
+}
+.group>div {
+    text-align: center;
+}
+
+
+.sub-title {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 15px 30px;
+    margin: 30px auto;
+    text-align: center;
+    background-color: #ffc300;
+    color:#292929;
+    width: 72.5%;
+
+}
+
+/* -------------------- footer -------------------- */
+#footer {
+    color: white;
+}

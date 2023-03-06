@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        /*
+            location, history, document : 객체
+        */
+
+        // window.open("http://www.daum.net");
+        // window.close();
+        // window.location.href = "http://www.daum.net";
+        // window.document.write("hello");
+
+    </script>
+
+</head>
+
+<body>
+    <section id="s1">
+        <h1>hello</h1>
+        <div>
+            <input>
+        </div>
+        <div>
+            <input>
+        </div>
+        <div>
+            <input id="notice-title">
+        </div>
+        <div>
+            <input class="test-class">
+        </div>
+        <div>
+            <input>
+        </div>
+        <div>
+            <input class="selector">
+        </div>
+    </section>
+    <nav id="some-menu">
+        <h1>무슨메뉴</h1>
+        <ul>
+            <li>짜장면</li>
+            <li>짬뽕</li>
+            <li>양장피</li>
+        </ul>
+    </nav>
+
+    <script>
+
+        // Node 선택방법 1 : Node를 순회하는 방식
+
+        window.document.body
+            .childNodes[1] // section
+            .childNodes[3] // div
+            .childNodes[1].value = "나 찾았어?"; // input
+
+        console.log(window.document.body
+            .childNodes[0].nodeType); // 3 (text)
+
+        console.log(window.document.body
+            .childNodes[1].nodeType); // 1 (element)
+
+
+        // Node 선택방법 2 : 엘리먼트 Node만을 순회하는 방식
+
+        window.document.body
+            .children[0] // section
+            .children[2] // div
+            .children[0].value = "찾았다!"; // input[2]
+
+
+        // Node 선택방법 3 : 엘리먼트에 이름(식별자)를 부여해서 선택하기
+
+        var noticeTitle = document.getElementById("notice-title");
+        noticeTitle.value = "id로 찾았다!";
+
+
+        // Node 선택방법 4 : 클래스, name 속성, 태그명을 이용한 선택
+
+        var s1 = document.getElementById("s1");
+        var testClass = s1.getElementsByClassName("test-class");
+        var testTag = s1.getElementsByTagName("input");
+        testClass[0].value = "클래스로 찾기";
+        testTag[4].value = "태그로 찾기";
+
+
+        // Node 선택방법 5 : Selectors API를 이용하여 선택하기
+
+        var selector = document.querySelector("#s1 .selector");
+        selector.value = "셀렉터로 찾기";
+        var menuItem = document.querySelector("#some-menu li:first-child");
+        menuItem.innerText = "삼선짜장";
+        var menuItems = document.querySelectorAll("#some-menu li");
+        menuItems[2].innerText = "삼선짜장";
+
+
+        // Node 순회하기
+        var section = document.querySelector("#some-menu");
+        console.log(section.innerText);
+        console.log(section.innerHTML);
+        console.log(section.textContent);
+
+        // var first = section.querySelector("li:first-child");
+        // var next = first.nextSibling;
+        var ul = section.querySelector("ul");
+        var first = ul.firstElementChild;
+        first.innerText = "호호";
+        var next = first.nextElementSibling;
+        next.innerText = "찾았다!!!!!!!!!!!!!!!!!";
+
+
+
+    </script>
+
+
+</body>
+
+</html>

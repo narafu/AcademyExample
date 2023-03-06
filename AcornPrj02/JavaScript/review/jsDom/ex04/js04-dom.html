@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./js04-dom.css">
+    <script src="./js04-dom.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <section id="s3">
+        <h1>노드 복제 / 템플릿 태그</h1>
+
+        <div>
+            <input type="button" class="clone-button" value="복제">
+            <input type="button" class="template-button" value="템플릿 복제">
+        </div>
+        <template>
+            <tr>
+                <td></td>
+                <td><a href=""></a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </template>
+        <table border="1" class="notice-list">
+            <thead>
+                <tr>
+                    <td>번호</td>
+                    <td>제목</td>
+                    <td>작성일</td>
+                    <td>작성자</td>
+                    <td>조회수</td>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr>
+                    <td>1</td>
+                    <td><a href="">호랑이</a></td>
+                    <td>2020-05-20</td>
+                    <td>tiger</td>
+                    <td>123</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="">사자</a></td>
+                    <td>2020-05-21</td>
+                    <td>lion</td>
+                    <td>83</td>
+                </tr> -->
+            </tbody>
+        </table>
+
+
+    </section>
+
+    <br>
+    <hr>
+
+    <section id="s2">
+        <h1>노드조작: 메뉴추가 / createTextNode</h1>
+        <div>
+            <input type="text" class="title-input" name="title">
+            <input type="button" class="add-button" value="추가">
+            <input type="button" class="del-button" value="삭제">
+        </div>
+        <ul class="menu-list">
+            <li><a href="">aaa</a></li>
+            <li><a href="">bbb</a></li>
+        </ul>
+    </section>
+
+    <br>
+    <hr>
+
+    <section id="s1">
+        <h1> img 변경 & 색상 변경</h1>
+        <div>
+            <select name="" id="">
+                <option value="img1.jpg">img1</option>
+                <option value="img2.jpg">img2</option>
+                <option value="img3.jpg">img3</option>
+                <option value="img4.jpg">img4</option>
+                <option value="img5.jpg">img5</option>
+            </select>
+            <input type="color" class="color-input">
+            <input type="button" value="적용" class="btn-input">
+        </div>
+        <div class="img-div">
+            <img src="../../../poster/img1.jpg" alt="">
+        </div>
+    </section>
+
+
+</body>
+
+</html>

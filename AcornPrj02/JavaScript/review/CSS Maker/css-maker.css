@@ -1,0 +1,54 @@
+.hidden {
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+#maker .container>div {
+    border: solid #dddddd;
+    padding: 25px;
+    margin: 20px;
+}
+
+#maker select[name=main] {
+    width: 100%;
+    margin: 10px 0px;
+}
+
+#maker .container .label {
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    text-align: justify;
+}
+
+#maker .container .title {
+    background-color: #dddddd;
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#maker .container .content-preview {
+    height: 100px;
+    border: solid;
+    margin: 20px;
+    padding: 20px;
+}
+
+#maker input[type=range] {
+    width: 300px;
+}
+
+.transform-menu .sub {
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+}
+
+.transform-menu .sub li {
+    display: flex;
+    padding: 10px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function f1() {
+            var x1 = 1;
+            return function f2() {
+                var x2 = 2;
+                document.write(x1);
+                document.writr(x2);
+            }
+        }
+
+        f1();
+        f2();
+
+        // 함수가 객체인 자바스크립트는 함수를 return 할 수 있다.
+
+    </script>
+
+</body>
+
+</html>

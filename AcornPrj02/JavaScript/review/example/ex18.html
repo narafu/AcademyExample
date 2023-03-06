@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        var x = 3;
+        var y = new Number(5);
+
+        document.write(x + '<br/>');
+        document.write(y);
+        document.write('<br/>');
+        document.write('------------------');
+        document.write('<br/>');
+
+        var nums = new Array();
+        nums.push(4);
+        nums.push(7);
+        document.write(nums);
+        document.write('<br/>');
+        document.write(nums[1]);
+        document.write('<br/>');
+        document.write(nums);
+        document.write('<br/>');
+        nums.pop(nums[1]);
+        document.write(nums);
+        document.write('<br/>');
+        document.write('------------------');
+        document.write('<br/>');
+        nums[10] = 9;
+        document.write(nums);
+        console.log(nums);
+        nums.pop(99);
+        console.log(nums);
+        nums.pop();
+        nums.push(55);
+
+        var ar = [0, 9, 1, 8];
+        nums[1] = 5;
+        nums[2] = '초';
+        nums[3] = '커피';
+        nums[4] = 'star';
+        nums[5] = [5, 4, 1, 0, 55];
+        nums[6] = 'coffee';
+        nums[7] = 'm14';
+        nums[8] = ar;
+        console.log(nums);
+
+        nums.splice(5, 2, 'new member');
+        console.log(nums);
+
+        var exam = new Object();
+        exam.kor = 50;
+        exam.math = 80;
+        exam["eng"] = 100;
+        console.log(exam);
+
+        exam["com"] = 150;
+        var com = "com";
+        console.log(exam[com]);
+
+        var school = { "name": 888, "num": 1000 };
+        console.log(school.name);
+        console.log(school.num);
+        var ar0 = [ 5, 3, 10, school ];
+        console.log(ar0[3].num);
+
+        
+
+    </script>
+
+</body>
+
+</html>

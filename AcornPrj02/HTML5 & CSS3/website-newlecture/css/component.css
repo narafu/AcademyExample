@@ -1,0 +1,357 @@
+/*
+html -> css
+style은 outline 같은 것은 따지지 않는다.
+다만 스타일 하기 위한 박스만 찾는다.
+
+방을 나누는 작업(크기, 위치)과 벽지 바르기(배경, 경계)
+방을 배치할 때 선형배치의 어려움은 flex 로 해결하자.
+
+아이템(콘텐츠(-텍스트:이미지,span,b,..) 블록[목록,폼,표,제목,문장])
+아이템 = 콘텐츠블록을 선택할 때.. id? class?
+
+문서에서 유일한 놈의 이름은 물론 id가 맞지...
+but 그러나.. 스타일의 명명은 class를 기본으로 하자.
+
+.main-menu : section(O) -> ul(X)
+콘텐츠 블록은 내부 구조가 달라질 가능성이 별로 없어
+nav.main-menu>ul>li>
+
+방(layout.css),
+콘텐츠블록(component.css),
+콘텐츠(style.css)
+
+
+셀렉터->연산자->우선순위->속성(방->가구)
+가구(메뉴목록->폼:테스트->그림->표)
+
+
+*/
+
+.logo{
+    display: inline-block;
+
+    position: absolute;
+    left:0px;
+    top:23px;
+}
+
+.main-menu{
+    display: inline-block;
+    --border: 1px solid red;
+
+    position: absolute;
+    left:200px;
+    top:27px;
+}
+
+.main-menu>ul{
+    display: flex;
+
+    font-family: "맑은 고딕", "고딕", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #000;
+    text-decoration: none;
+}
+
+.main-menu li{
+    padding-left: 24px;
+    background:url(../images/bg-main-menu-vsp.png) no-repeat 12px center;    
+}
+
+.main-menu li:first-child{
+    padding-left: 0px;
+    background:none;
+}
+
+.main-menu a{
+    color:#000;
+}
+
+.main-menu a:hover{
+    color:#ff6a00;
+}
+
+
+
+.lecture-search{
+    display: inline-block;
+
+    position: absolute;
+    left:468px;
+    top:21px;
+}
+
+.lecture-search-form{
+    width: 308px;
+    height: 25px;
+    border : 5px solid #8CBA34;
+}
+
+.lecture-search-form 
+div{
+    display: flex;
+    align-items: center;
+}
+.lecture-search-form 
+label
+{
+    font-size: 11px;
+    font-weight: bold;
+    color: #979797;
+    --height: 25px;
+    --line-height: 25px;
+}
+
+.lecture-search-form 
+input[type="submit"]{
+    background:url(../images/btn-zoom.png) no-repeat center;
+    border : 0px;
+    border-left : 1px solid #8CBA34;
+    width:31px;
+    --height: 25px;
+    text-indent: -999px;
+}
+
+.lecture-search-form 
+input[type="text"]{
+    flex-grow: 1;
+}
+/* --- member-menu ---------------------------- */
+.member-menu{
+    display: inline-block;
+
+    position: absolute;
+    right:0px;
+    top:20px;
+}
+
+.member-menu a{
+		
+    display: inline-block;
+    font-family: "맑은 고딕", "고딕", sans-serif;
+    font-size: 10px;
+    font-weight: bold;	
+    
+    color:#979797;
+    text-decoration: none;
+}
+
+.member-menu a:hover{
+    text-decoration:underline;
+}
+
+.member-menu > ul{	
+    overflow: auto;
+}
+
+.member-menu > ul > li{
+    float:left;
+    padding-left: 9px;
+    background: url("../images/bg-member-menu-sp.png") no-repeat 5px center; 
+}
+
+.member-menu > ul > li:first-child{	
+    padding-left: 0px;
+    background: none; 
+}
+
+
+/* --- customer-menu ---------------------------- */
+.customer-menu{
+    position: absolute;
+    right:0px;
+    top:40px;
+}
+
+.customer-menu>ul{
+    display: flex;
+}
+
+.customer-menu li>a{
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+.customer-menu li:first-child>a{
+    display: inline-block;
+    width:72px;
+    height: 17px;
+    background: url(../images/txt-mypage.png) no-repeat center;
+
+}
+
+.customer-menu li:last-child>a{
+    display: inline-block;
+    width:72px;
+    height: 17px;
+    background: url(../images/txt-customer.png) no-repeat center;
+}
+
+/* ---------aside -------------------------- */
+
+.aside>h1 {
+
+}
+
+.aside .title{
+    font-family: 맑은 고딕, 고딕, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 43px;
+}
+
+.aside-menu {
+    color: #ffffff;
+    height: 27px;
+    line-height: 27px;
+    padding-left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px 1px #000000;
+    background: url(../images/bg-aside-sub-title.png) no-repeat 0px 0px;
+}
+
+
+/* ----------------------------------------------------------- */
+
+.main-title{
+    font-family: 맑은 고딕, 고딕, sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    color: #646464;
+    padding-left: 25px;
+    background: url(../images/icon-main-title.png) no-repeat left center;
+}
+
+
+/* ------------------------------------------------------------------- */
+/* --- breadcrumb ----------------------------------------------------------------------------- */
+.breadcrumb {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 45px;
+    right: 0px;    
+}
+
+.breadcrumb ol {
+    display: flex;
+    
+}
+
+.breadcrumb li {    
+    list-style-type: none;
+	padding-left: 10px;
+	background: url("../images/icon-path.png") no-repeat left center;
+}
+
+.breadcrumb li:first-child {
+	padding-left: 20px;
+	background: url("../images/icon-home.png") no-repeat left center;
+}
+
+
+/* ---------------------------------------------------------------------- */
+
+.notice-search{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+/* --- notice-table ---------------------------- */
+
+.notice-table{
+    border-top: 2px solid #8cba34;
+    width: 100%;
+    text-align: center;
+    table-layout : fixed;
+}
+
+    .notice-table tr{
+        height: 30px; 
+        border-bottom: 1px solid #e9e9e9;
+    }
+
+    .notice-table thead tr{
+        background: #f5f5f5;
+        color:#979797;
+    }
+
+        .notice-table thead td{
+            background: #f5f5f5 url(../images/bg-title-sp.png) no-repeat left center;
+        }
+
+        .notice-table thead td:first-child{
+            background: none;
+        }
+
+        .notice-table thead .col-num{
+            width:60px;
+        }
+        .notice-table thead .col-text{
+            width:100px;
+        }
+        .notice-table thead .col-exp{
+            
+        }
+
+    /*.notice-table tbody td:nth-child(2){*/
+    .notice-table tbody .title{
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        --text-indent: 10px;
+        padding:0px 10px;
+    }
+
+/* --- page-index ---------------------------- */
+
+.page-index{
+    --display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+/* --- ??? ---------------------------- */
+.pager{
+    display: flex;
+    justify-content: center;
+}
+
+    .pager ul{
+        display: flex;        
+    }
+
+        .pager>div{
+            display: flex;
+        }
+
+        .pager ul li{
+            width:15px;
+            height: 15px;   
+            text-align: center;         
+        }
+
+        .pager>div>div:first-child{
+            width: 15px;
+            height: 15px;
+            background: url(../images/btn-prev.png) no-repeat center;
+            text-indent: -999px;
+            overflow: hidden;
+        }
+
+        .pager>div>div:last-child{
+            width: 15px;
+            height: 15px;
+            background: url(../images/btn-next.png) no-repeat center;
+            text-indent: -999px;
+            overflow: hidden;
+        }
+

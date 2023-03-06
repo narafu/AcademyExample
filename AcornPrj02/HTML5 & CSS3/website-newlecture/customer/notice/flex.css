@@ -1,0 +1,89 @@
+/*
+
+지금까지 이런 레이아웃을 위한 스타일은 없었다.
+이것이 문서 스타일인가? 앱을 위한 스타일인가...
+
+display:flex;
+
+container 스타일
+: display:flex;
+  flex-direction:row/column/-reverse
+
+item 스타일
+: container의 flex-direction:row 일때
+  item의 width는? 
+    item으로 사용되는 녀석이 block(100%)->content 너비
+  item의 hegiht는? 
+    item으로 사용되는 녀석이 무엇이든 0px 또는 content 높이
+: item의 width를 고정 너비 100px로 했을 경우
+  item*개수가 부모의 width를 넘어서는 경우 
+  -> item의 width는 100px을 유지하는가? 아니요
+  마치 item의 width는 max-width를 정하는 느낌적인 느낌
+
+  그렇다면 100px을 유지하려면? min-width를 사용하라
+: item의 flex-grow -> 빈공백을 나누는 비율을 설정
+  -> 빈공백이 있을 때만 유효하다.
+
+*** 정렬 방식을 가지고 있다. ***
+container의 정렬 방식이 row 일 경우
+높이를 200px로 정하자.
+
+그럼 자식(item)의 높이는 어떻게 되는가?
+: 따라가죠? 부모따라 높이가 200px으로 상속이 됩니다.
+
+이번에는 item의 높이를 100px로 해주세요.
+
+이번에는 item들의 높이를 각 100,120,100,140,100으로 해주세요.
+
+
+*/
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border:1px solid black;
+    background: #e9e9e9;
+    height: 200px;
+    --align-items: center;
+    justify-content: center;
+}
+
+#container
+>div{    
+    --width:100px;
+    --height: 100px;
+    flex-grow: 1;
+    --min-width: 300px;
+}
+
+#container
+>div:nth-child(1){
+    --order: 2;
+    background: blue;
+}
+#container
+>div:nth-child(2){
+    order: 1;
+    --flex-grow: 1;
+    background: yellow;
+    --height: 120px;
+}
+#container
+>div:nth-child(3){
+    --order: 3;
+    --flex-grow: 2;
+    background: green;
+}
+#container
+>div:nth-child(4){
+    --order: 4;
+    background: pink;
+    --height: 140px;
+}
+#container
+>div:nth-child(5){
+    --order: 5;
+    background: purple;
+    --height: 110px;
+}

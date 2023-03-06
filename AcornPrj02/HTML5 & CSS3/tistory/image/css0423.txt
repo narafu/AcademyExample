@@ -1,0 +1,13 @@
+
+ * CSS 배치방식(Layout)
+
+	Static : 적재방식(위치, 크기 자동)
+
+	Relative : 
+
+	Absolute : 위치와 크기 직접 지정
+
+
+    width: 960px;
+        width: 205px;
+            width: 755px;
