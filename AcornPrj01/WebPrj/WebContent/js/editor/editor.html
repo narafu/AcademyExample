@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="editor.js"></script>
+	<style>
+		.html-area {
+			/* all: unset; */
+			min-height: 400px;
+			border: 1px #797979 solid;
+		}
+		.d-none {
+			display: none;
+		}
+	</style>
+	<title>Document</title>
+</head>
+
+<body>
+
+	<div class="editor">
+		<div class="toolbar">
+			<button class="btn-bold">B</button>
+			<button class="btn-itelic">I</button>
+			<button class="btn-img">Img</button>
+			<input type="file" class="d-none btn-file">
+		</div>
+		<div class="html-area" contenteditable="true"></div>
+		<textarea class="content" name="content"></textarea>
+	</div>
+
+
+</body>
+
+</html>

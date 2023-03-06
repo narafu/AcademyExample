@@ -1,0 +1,185 @@
+a {
+	cursor: pointer;
+}
+
+
+
+#header a {
+	display: inline-block;
+	background: #5383e8;
+	border: none;
+	vertical-align: middle;
+	letter-spacing: -0.5px;
+}
+
+#header .top-header {
+	color: #fff;
+}
+
+#header .logo {
+	width: auto;
+	height: auto;
+	max-width: 65px;
+	padding: 12.5px 17.5px;
+}
+
+#header .login {
+	border-radius: 4px;
+	font-size: 12px;
+	padding: 5px 15px;
+	margin-left: 880px;
+}
+
+#header .bottom-header {
+	display: inline-flex;
+	background: #5383e8;
+	align-items: center;
+	color: #b3cdff;
+}
+
+#header .bottom-header a:hover {
+	color: white;
+	font-weight: bold;
+}
+
+#header .bottom-header li {
+	display: inline-block;
+	padding: 20px;
+	padding-top: 12.5px;
+}
+
+#header .bottom-header form {
+	display: flex;
+	height: 30px;
+	font-size: 12.5px;
+	margin-left: 300px;
+}
+
+#header .bottom-header select {
+	color: #7896cf;
+}
+
+#header .bottom-header input {
+	width: 230px;
+}
+
+#header .bottom-header img {
+	width: auto;
+	height: auto;
+	max-width: 30px;
+}
+
+
+
+#main a:hover {
+	color: #5383e8;
+	font-weight: bold;
+}
+#main .aside p {
+	font-size: 12.5px;
+	color: gray;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+#main .content-container .list div {
+	display: flex;
+	align-items: center;
+}
+#main .content-container .list-sort ul {
+	display: flex;
+	margin-left: 10px;
+}
+#main .content-container .list li {
+	padding: 20px;
+	font-weight: bold;
+}
+#main .content-container .list input {
+	margin-left: 30px;
+	border: none;
+	background-color: #f6f4f0;
+	width: 150px;
+	height: 30px;
+	font-size: 12px;
+	padding-left: 10px;
+}
+#main .content-container .list .logo {
+	display: block;
+}
+
+
+
+#main .content-container .ranking div {
+	display: flex;
+	line-height: 25px;
+	font-size: 14px;
+	padding: 20px;
+}
+#main .content-container .ranking div h1 {
+	font-weight: bold;
+}
+
+#main .content-container .ranking .ranking-category>ul {
+	margin-left: 30px;
+	display: flex;
+}
+
+#main .content-container .ranking .ranking-category li {
+	color: #777;
+	padding: 0px 15px;
+}
+
+#main .content-container .ranking .ranking-sort ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+#main .content-container .ranking .ranking-sort li {
+	color: #777;
+	padding: 10px;
+	font-size: 13px;
+	background-color: #f6f4f0;
+}
+#main .content-container .ranking table {
+	color: #777;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 12px;
+	text-align: center;
+	border: #ccc8c0;
+	margin-left: auto;
+	margin-right: auto;
+}
+#main .content-container .ranking table th {
+	text-align: center;
+	height: 30px;
+	font-weight: bold;
+}
+#main .content-container .ranking table .rank {
+	font-weight: bold;
+}
+#main .content-container .ranking table td {
+	text-align: center;
+	height: 50px;
+}
+
+
+
+
+#footer {
+	padding: 20px 20px;
+	color: #333;
+	font-size: 12px;
+}
+
+#footer ul {
+	display: flex;
+}
+
+#footer ul li {
+	padding: 10px;
+	color: black
+}
+
+#footer p {
+	max-width: 1000px;
+}

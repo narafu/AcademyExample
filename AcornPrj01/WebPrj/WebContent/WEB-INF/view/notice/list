@@ -1,0 +1,2 @@
+admin ListController와 이름이 중복되면 404 error
+해결하기 위해 list(file)을 만들어 클릭하여 실행한다..

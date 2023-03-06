@@ -1,0 +1,54 @@
+.hidden {
+    display: none;
+}
+.container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* first-layout */
+
+.top-header {
+    background-color: rgb(241, 240, 240);
+}
+.bottom-header {
+    height: 80px;
+}
+#visual {
+    height: 500px;
+}
+    #body .main-menu {
+        background-color: rgb(238, 236, 236);
+        border-bottom: solid #cccccc 1.5px;
+    }
+#footer {
+    border-top: solid 1px #cccccc;
+}
+
+
+/* hover */
+
+#header .top-header li:hover {
+    border-bottom: solid 4px;
+}
+#header .main-menu ul a:hover {
+    border-bottom: solid 2px red;
+}
+#header .side-menu a:hover {
+    border-bottom: solid 2px red;
+}
+#body .main-menu ul a:hover {
+    background-color: red;
+    color: white;
+}
+#body .container .menu-item .side-bar img:hover {
+    border: solid red 4px;
+}
+#body .container .menu-tv .menu div a>img:hover {
+    border: solid red 4px;
+}
+.pager a:hover {
+    color: red;
+    font-weight: bold;
+}
